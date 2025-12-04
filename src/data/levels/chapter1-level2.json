@@ -1,0 +1,134 @@
+{
+  "id": "chapter1-level2",
+  "name": "Shadows Deepen",
+  "chapterNumber": 1,
+  "difficulty": 1.5,
+  "mazeConfig": {
+    "type": "SHADOW",
+    "width": 24,
+    "height": 20,
+    "layers": 1,
+    "obstacleCount": 3,
+    "collectibleCount": 7,
+    "visibilityRadius": 80
+  },
+  "objectives": [
+    "Navigate in limited visibility",
+    "Use Sense ability to reveal paths",
+    "Collect 3 keys",
+    "Avoid multiple guards",
+    "Reach the exit"
+  ],
+  "puzzles": [
+    {
+      "id": "ch1-l2-collection",
+      "type": "COLLECTION_PUZZLE",
+      "position": { "x": 9, "y": 7 },
+      "requiredItems": ["ch1-l2-key-1", "ch1-l2-key-2", "ch1-l2-key-3"],
+      "unlockedPaths": [{ "x": 15, "y": 12 }]
+    }
+  ],
+  "collectibles": [
+    {
+      "id": "ch1-l2-key-1",
+      "type": "CLUE",
+      "position": { "x": 5, "y": 7 },
+      "hint": "First key hidden in darkness"
+    },
+    {
+      "id": "ch1-l2-key-2",
+      "type": "CLUE",
+      "position": { "x": 18, "y": 6 },
+      "hint": "Second key in the far corner"
+    },
+    {
+      "id": "ch1-l2-key-3",
+      "type": "CLUE",
+      "position": { "x": 12, "y": 14 },
+      "hint": "Third key near the shadows"
+    },
+    {
+      "id": "ch1-l2-lore-1",
+      "type": "LORE_ITEM",
+      "position": { "x": 4, "y": 14 },
+      "title": "Shadow's Whisper",
+      "description": "The darkness is alive. It watches, it waits, it remembers."
+    },
+    {
+      "id": "ch1-l2-charge-sense",
+      "type": "ABILITY_CHARGE",
+      "position": { "x": 20, "y": 10 },
+      "abilityType": "SENSE",
+      "charges": 2
+    },
+    {
+      "id": "ch1-l2-cosmetic",
+      "type": "COSMETIC_UNLOCK",
+      "position": { "x": 16, "y": 16 },
+      "cosmeticId": "ghost-shadow",
+      "name": "Shadow Ghost",
+      "description": "A darker, more mysterious appearance"
+    }
+  ],
+  "obstacles": [
+    {
+      "id": "ch1-l2-guard-1",
+      "type": "PHANTOM_GUARD",
+      "patrolPath": [
+        { "x": 8, "y": 8 },
+        { "x": 16, "y": 8 },
+        { "x": 16, "y": 14 }
+      ],
+      "speed": 1.7
+    },
+    {
+      "id": "ch1-l2-guard-2",
+      "type": "PHANTOM_GUARD",
+      "patrolPath": [
+        { "x": 18, "y": 4 },
+        { "x": 22, "y": 4 }
+      ],
+      "speed": 1.6
+    },
+    {
+      "id": "ch1-l2-guard-3",
+      "type": "PHANTOM_GUARD",
+      "patrolPath": [
+        { "x": 12, "y": 16 },
+        { "x": 12, "y": 20 }
+      ],
+      "speed": 1.8
+    }
+  ],
+  "traps": [
+    {
+      "id": "ch1-l2-trap-1",
+      "type": "CURSED_TRAP",
+      "position": { "x": 10, "y": 12 },
+      "effect": {
+        "type": "MOVEMENT_RESTRICTION",
+        "duration": 2500,
+        "magnitude": 0.4
+      },
+      "triggerRadius": 25
+    },
+    {
+      "id": "ch1-l2-trap-2",
+      "type": "CURSED_TRAP",
+      "position": { "x": 20, "y": 10 },
+      "effect": {
+        "type": "COOLDOWN_INCREASE",
+        "duration": 3000,
+        "magnitude": 2
+      },
+      "triggerRadius": 25
+    }
+  ],
+  "storyMemoryId": "memory-2",
+  "hints": [
+    "Use Sense ability (3) to reveal hidden paths",
+    "The darkness limits your vision - move carefully",
+    "Guards are harder to see in shadows",
+    "Collect ability charges to use powers more often"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "memories": [
+    {
+      "id": "tutorial-memory",
+      "chapterNumber": 0,
+      "title": "Awakening",
+      "content": "You open your eyes... but something is wrong. Your body feels weightless, translucent. The maze stretches before you, ancient and mysterious. How did you get here? Why can't you remember?",
+      "unlockCondition": "Complete tutorial level"
+    },
+    {
+      "id": "memory-1",
+      "chapterNumber": 1,
+      "title": "The Beginning",
+      "content": "Fragments of memory return. This maze... you've been here before. Long ago, when you were still alive. The walls whisper secrets of your past, but the words are unclear, distorted by time and death.",
+      "unlockCondition": "Complete Chapter 1, Level 1"
+    },
+    {
+      "id": "memory-2",
+      "chapterNumber": 1,
+      "title": "Lost in Shadows",
+      "content": "The shadows grow deeper, more oppressive. You remember darkness... falling... and then nothing. The maze was your prison then, and it remains your prison now. But why? What sin binds you to this place?",
+      "unlockCondition": "Complete Chapter 1, Level 2"
+    },
+    {
+      "id": "memory-3",
+      "chapterNumber": 1,
+      "title": "Echoes of the Past",
+      "content": "You see them now - other ghosts, trapped like you. Some have been here for centuries. They warn you: the maze feeds on memories, on regrets. The only way out is to remember everything... and let it all go.",
+      "unlockCondition": "Complete Chapter 1, Level 3"
+    },
+    {
+      "id": "memory-4",
+      "chapterNumber": 1,
+      "title": "The Truth Emerges",
+      "content": "A flash of clarity pierces the fog. You were a guardian of this place once, tasked with protecting something precious. But you failed. The maze consumed you, transformed you. Now you must undo what was done.",
+      "unlockCondition": "Complete Chapter 1, Level 4"
+    },
+    {
+      "id": "memory-5",
+      "chapterNumber": 1,
+      "title": "Redemption's Path",
+      "content": "The final pieces fall into place. The maze is not your enemy - it's a test. Each puzzle solved, each challenge overcome, brings you closer to redemption. The exit is not an escape, but a transformation.",
+      "unlockCondition": "Complete Chapter 1, Level 5",
+      "cinematicData": {
+        "duration": 8000,
+        "scenes": [
+          {
+            "text": "Chapter 1 Complete",
+            "duration": 2000
+          },
+          {
+            "text": "The maze remembers...",
+            "duration": 3000
+          },
+          {
+            "text": "And so do you.",
+            "duration": 3000
+          }
+        ]
+      }
+    }
+  ],
+  "loreItems": [
+    {
+      "id": "lore-ancient-inscription",
+      "title": "Ancient Inscription",
+      "description": "Carved into weathered stone: 'Those who enter seeking escape will find only deeper chains. Those who enter seeking truth will find freedom.'",
+      "unlockCondition": "Found in Chapter 1, Level 1"
+    },
+    {
+      "id": "lore-guardian-oath",
+      "title": "Guardian's Oath",
+      "description": "A faded scroll: 'I swear to protect the Heart of the Maze, to guard its secrets, to ensure no unworthy soul passes through. May my spirit remain bound until this duty is fulfilled.'",
+      "unlockCondition": "Found in Chapter 1, Level 2"
+    },
+    {
+      "id": "lore-prisoner-journal",
+      "title": "Prisoner's Journal",
+      "description": "Torn pages: 'Day 47... or is it 470? Time has no meaning here. The walls shift. The guards never tire. I've forgotten my name, but I remember my crime: I sought power I didn't deserve.'",
+      "unlockCondition": "Found in Chapter 1, Level 3"
+    },
+    {
+      "id": "lore-maze-heart",
+      "title": "The Maze's Heart",
+      "description": "An ancient tablet: 'At the center lies the Heart - a crystal of pure memory. It records all who enter, all who fail, all who succeed. To reach it is to face yourself completely.'",
+      "unlockCondition": "Found in Chapter 1, Level 4"
+    }
+  ]
+}

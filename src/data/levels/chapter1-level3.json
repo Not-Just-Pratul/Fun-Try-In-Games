@@ -1,0 +1,154 @@
+{
+  "id": "chapter1-level3",
+  "name": "Echoes and Whispers",
+  "chapterNumber": 1,
+  "difficulty": 1.8,
+  "mazeConfig": {
+    "type": "LINEAR",
+    "width": 26,
+    "height": 20,
+    "layers": 1,
+    "obstacleCount": 3,
+    "collectibleCount": 8
+  },
+  "objectives": [
+    "Master all four abilities",
+    "Solve sequence puzzle",
+    "Solve timing puzzle",
+    "Collect hidden lore",
+    "Reach the exit"
+  ],
+  "puzzles": [
+    {
+      "id": "ch1-l3-sequence",
+      "type": "SEQUENCE_PUZZLE",
+      "position": { "x": 10, "y": 8 },
+      "requiredSequence": ["switch-1", "switch-2", "switch-3"],
+      "unlockedPaths": [{ "x": 15, "y": 8 }]
+    },
+    {
+      "id": "ch1-l3-timing",
+      "type": "TIMING_PUZZLE",
+      "position": { "x": 17, "y": 12 },
+      "timeWindow": 5000,
+      "unlockedPaths": [{ "x": 18, "y": 14 }]
+    }
+  ],
+  "collectibles": [
+    {
+      "id": "ch1-l3-switch-1",
+      "type": "CLUE",
+      "position": { "x": 5, "y": 5 },
+      "hint": "First switch in the sequence"
+    },
+    {
+      "id": "ch1-l3-switch-2",
+      "type": "CLUE",
+      "position": { "x": 12, "y": 9 },
+      "hint": "Second switch - order matters"
+    },
+    {
+      "id": "ch1-l3-switch-3",
+      "type": "CLUE",
+      "position": { "x": 19, "y": 7 },
+      "hint": "Final switch completes the sequence"
+    },
+    {
+      "id": "ch1-l3-lore-1",
+      "type": "LORE_ITEM",
+      "position": { "x": 4, "y": 14 },
+      "title": "Echo Chamber",
+      "description": "Every action echoes through time. The maze remembers all."
+    },
+    {
+      "id": "ch1-l3-charge-phase",
+      "type": "ABILITY_CHARGE",
+      "position": { "x": 7, "y": 12 },
+      "abilityType": "PHASE",
+      "charges": 2
+    },
+    {
+      "id": "ch1-l3-charge-possess",
+      "type": "ABILITY_CHARGE",
+      "position": { "x": 17, "y": 12 },
+      "abilityType": "POSSESS",
+      "charges": 2
+    },
+    {
+      "id": "ch1-l3-charge-speed",
+      "type": "ABILITY_CHARGE",
+      "position": { "x": 22, "y": 10 },
+      "abilityType": "SPEED_BOOST",
+      "charges": 2
+    },
+    {
+      "id": "ch1-l3-cosmetic",
+      "type": "COSMETIC_UNLOCK",
+      "position": { "x": 20, "y": 16 },
+      "cosmeticId": "ghost-ethereal",
+      "name": "Ethereal Ghost",
+      "description": "A shimmering, otherworldly form"
+    }
+  ],
+  "obstacles": [
+    {
+      "id": "ch1-l3-guard-1",
+      "type": "PHANTOM_GUARD",
+      "patrolPath": [
+        { "x": 8, "y": 8 },
+        { "x": 14, "y": 8 },
+        { "x": 14, "y": 14 }
+      ],
+      "speed": 1.8
+    },
+    {
+      "id": "ch1-l3-guard-2",
+      "type": "PHANTOM_GUARD",
+      "patrolPath": [
+        { "x": 18, "y": 4 },
+        { "x": 22, "y": 4 }
+      ],
+      "speed": 1.7
+    },
+    {
+      "id": "ch1-l3-guard-3",
+      "type": "PHANTOM_GUARD",
+      "patrolPath": [
+        { "x": 20, "y": 14 },
+        { "x": 20, "y": 18 }
+      ],
+      "speed": 1.9
+    }
+  ],
+  "traps": [
+    {
+      "id": "ch1-l3-trap-1",
+      "type": "CURSED_TRAP",
+      "position": { "x": 12, "y": 10 },
+      "effect": {
+        "type": "COOLDOWN_INCREASE",
+        "duration": 3500,
+        "magnitude": 2.5
+      },
+      "triggerRadius": 22
+    },
+    {
+      "id": "ch1-l3-trap-2",
+      "type": "CURSED_TRAP",
+      "position": { "x": 22, "y": 12 },
+      "effect": {
+        "type": "MOVEMENT_RESTRICTION",
+        "duration": 3000,
+        "magnitude": 0.4
+      },
+      "triggerRadius": 25
+    }
+  ],
+  "storyMemoryId": "memory-3",
+  "hints": [
+    "Sequence puzzles require activating switches in order",
+    "Timing puzzles must be completed within the time limit",
+    "Use Speed Boost (4) to move faster",
+    "Combine abilities for complex challenges"
+  ]
+}

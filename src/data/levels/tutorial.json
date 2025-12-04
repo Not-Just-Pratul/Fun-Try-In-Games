@@ -1,0 +1,69 @@
+{
+  "id": "tutorial",
+  "name": "Tutorial: First Steps",
+  "chapterNumber": 0,
+  "difficulty": 0.5,
+  "mazeConfig": {
+    "type": "LINEAR",
+    "width": 10,
+    "height": 8,
+    "layers": 1,
+    "obstacleCount": 1,
+    "collectibleCount": 3
+  },
+  "objectives": [
+    "Learn basic movement (WASD)",
+    "Collect your first key",
+    "Solve a simple puzzle",
+    "Reach the exit portal"
+  ],
+  "puzzles": [
+    {
+      "id": "tutorial-collection-1",
+      "type": "COLLECTION_PUZZLE",
+      "position": { "x": 5, "y": 4 },
+      "requiredItems": ["tutorial-key-1"],
+      "unlockedPaths": [{ "x": 7, "y": 4 }]
+    }
+  ],
+  "collectibles": [
+    {
+      "id": "tutorial-key-1",
+      "type": "CLUE",
+      "position": { "x": 3, "y": 2 },
+      "hint": "Your first key! Collect it to unlock the path ahead."
+    },
+    {
+      "id": "tutorial-lore-1",
+      "type": "LORE_ITEM",
+      "position": { "x": 6, "y": 6 },
+      "title": "Welcome to the Maze",
+      "description": "You awaken in a strange place. The walls whisper secrets..."
+    },
+    {
+      "id": "tutorial-charge-1",
+      "type": "ABILITY_CHARGE",
+      "position": { "x": 8, "y": 3 },
+      "abilityType": "PHASE",
+      "charges": 1
+    }
+  ],
+  "obstacles": [
+    {
+      "id": "tutorial-guard-1",
+      "type": "PHANTOM_GUARD",
+      "patrolPath": [
+        { "x": 4, "y": 5 },
+        { "x": 6, "y": 5 }
+      ],
+      "speed": 1.0
+    }
+  ],
+  "storyMemoryId": "tutorial-memory",
+  "hints": [
+    "Use WASD keys to move your ghost",
+    "Collect keys to unlock puzzles",
+    "Press E near puzzles to interact",
+    "Avoid the red phantom guards"
+  ]
+}

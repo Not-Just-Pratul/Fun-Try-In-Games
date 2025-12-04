@@ -1,0 +1,112 @@
+{
+  "id": "chapter1-level1",
+  "name": "The Awakening",
+  "chapterNumber": 1,
+  "difficulty": 1.1,
+  "mazeConfig": {
+    "type": "LINEAR",
+    "width": 22,
+    "height": 18,
+    "layers": 1,
+    "obstacleCount": 2,
+    "collectibleCount": 6
+  },
+  "objectives": [
+    "Navigate the first chamber",
+    "Collect 2 keys",
+    "Solve the collection puzzle",
+    "Unlock the possession puzzle",
+    "Reach the exit"
+  ],
+  "puzzles": [
+    {
+      "id": "ch1-l1-collection",
+      "type": "COLLECTION_PUZZLE",
+      "position": { "x": 7, "y": 6 },
+      "requiredItems": ["ch1-l1-key-red", "ch1-l1-key-blue"],
+      "unlockedPaths": [{ "x": 10, "y": 6 }]
+    },
+    {
+      "id": "ch1-l1-possession",
+      "type": "POSSESSION_PUZZLE",
+      "position": { "x": 12, "y": 8 },
+      "requiredObject": "ch1-l1-statue",
+      "unlockedPaths": [{ "x": 13, "y": 10 }]
+    }
+  ],
+  "collectibles": [
+    {
+      "id": "ch1-l1-key-red",
+      "type": "CLUE",
+      "position": { "x": 5, "y": 6 },
+      "hint": "The red key glows with ancient power"
+    },
+    {
+      "id": "ch1-l1-key-blue",
+      "type": "CLUE",
+      "position": { "x": 16, "y": 5 },
+      "hint": "The blue key completes the set"
+    },
+    {
+      "id": "ch1-l1-statue",
+      "type": "CLUE",
+      "position": { "x": 11, "y": 12 },
+      "hint": "An ancient statue that can be possessed"
+    },
+    {
+      "id": "ch1-l1-lore-1",
+      "type": "LORE_ITEM",
+      "position": { "x": 4, "y": 12 },
+      "title": "Forgotten Inscription",
+      "description": "The walls bear marks of those who came before. Their fate remains unknown."
+    },
+    {
+      "id": "ch1-l1-charge-phase",
+      "type": "ABILITY_CHARGE",
+      "position": { "x": 18, "y": 10 },
+      "abilityType": "PHASE",
+      "charges": 1
+    }
+  ],
+  "obstacles": [
+    {
+      "id": "ch1-l1-guard-1",
+      "type": "PHANTOM_GUARD",
+      "patrolPath": [
+        { "x": 6, "y": 6 },
+        { "x": 14, "y": 6 },
+        { "x": 14, "y": 14 }
+      ],
+      "speed": 1.6
+    },
+    {
+      "id": "ch1-l1-guard-2",
+      "type": "PHANTOM_GUARD",
+      "patrolPath": [
+        { "x": 18, "y": 10 },
+        { "x": 18, "y": 16 }
+      ],
+      "speed": 1.5
+    }
+  ],
+  "traps": [
+    {
+      "id": "ch1-l1-trap-1",
+      "type": "CURSED_TRAP",
+      "position": { "x": 10, "y": 10 },
+      "effect": {
+        "type": "COOLDOWN_INCREASE",
+        "duration": 3000,
+        "magnitude": 2
+      },
+      "triggerRadius": 20
+    }
+  ],
+  "storyMemoryId": "memory-1",
+  "hints": [
+    "Look for keys in the corners",
+    "Use Phase ability (1) to pass through special walls",
+    "Guards follow patrol paths - time your movement",
+    "Possess the statue with ability (2) to solve puzzles"
+  ]
+}
