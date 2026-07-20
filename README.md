@@ -1,3 +1,78 @@
+# Fun Try In Games
+
+> A modular, test-driven TypeScript game framework and prototype
+
+Live demo: https://fun-try-in-games.vercel.app/
+
+---
+
+## Overview
+
+Fun Try In Games is a lightweight, component-driven game project built with TypeScript and Vite. It demonstrates modular game systems such as abilities, procedural maze generation, collectibles, adaptive difficulty, and persistence. The repo includes unit and property-style tests to ensure mechanics remain stable as features evolve.
+
+## Features
+
+- Component-based systems for abilities, collectibles, puzzles, and obstacles
+- Procedural and multi-layered maze generation
+- Input handling, collision detection, and animation systems
+- Persistence adapters (IndexedDB, AsyncStorage) and analytics hooks
+- Comprehensive test suite with unit and integration tests
+
+## Quickstart
+
+Prerequisites: Node.js 18+ and npm or yarn
+
+1. Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+2. Run the development server
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+3. Run tests
+
+```bash
+npm test
+# or
+yarn test
+```
+
+## Project Structure
+
+- `src/` — source code (core systems, scenes, services, systems, UI)
+- `tests/` — test suites covering mechanics and integration
+- `data/` — level and story assets
+
+For details, open the relevant folders and read the in-file docs.
+
+## Deployment
+
+The current live deployment is hosted on Vercel:
+
+https://fun-try-in-games.vercel.app/
+
+If you want to deploy a new version yourself, connect the repository to Vercel and set the build command to `npm run build` and the output directory to `dist` (Vite default).
+
+## Contributing
+
+Contributions are welcome. Please open issues for bugs or feature requests and submit pull requests for fixes. Keep changes focused and include or update tests where appropriate.
+
+## License
+
+This project is provided under the MIT License. See `LICENSE` or add one if missing.
+
+---
+
+If you'd like, I can: add a `LICENSE` file, create a CI workflow for tests, or commit and push these changes to a branch. Which would you prefer?
 # 🎃 Chain-Ledge: Maze of the Lost Spirit
 
 ## 🎮 A Halloween-Themed Puzzle Adventure Game
